@@ -6,8 +6,9 @@ app.get('/', (c) => {
   return c.text('Hello, support bot!')
 })
 
-app.post('/new', (c) => {
-  console.log("POST /new");
+app.post('/new', async (c) => {
+  const data = await c.req.json()
+  console.log("POST /new", data);
   return c.text('POST /new')
 })
 
