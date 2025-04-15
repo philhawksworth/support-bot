@@ -2,12 +2,12 @@ import { Hono } from 'npm:hono'
 const app = new Hono()
 
 app.get('/', (c) => {
-  console.log("GET /", c);
+  console.log("GET /");
   return c.text('Hello, support bot!')
 })
 
 app.post('/new', (c) => {
-  console.log("POST /new", c);
+  console.log("POST /new");
   return c.text('POST /new')
 })
 
