@@ -1,0 +1,16 @@
+{
+  "tasks": {
+    "dev": "deno run -A --watch main.ts"
+  },
+  "imports": {
+    "@/": "./"
+  },
+  "deploy": {
+    "project": "bcf6a918-f487-4842-9ccb-79954f9b8b97",
+    "exclude": [
+      "**/node_modules"
+    ],
+    "include": [],
+    "entrypoint": "main.ts"
+  }
+}
